@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.nova {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../Images/easy_traveller.jpg);
+  background-repeat: no-repeat;
+  background-size: 99rem 49rem;
+}
+
+.nova .h-color {
+  color: #bf40bf;
+  font-size: 30px;
+  font-weight: 100px;
+}
+
+.nova ::selection {
+  color: #fff;
+  background: #53f0e3;
+}
+
+.nova .wrapper {
+  width: 380px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 5px 15px 10px rgb(50 26 168 / 10%);
+  margin-left: 60rem;
+}
+
+.nova .wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.nova .wrapper form {
+  margin: 40px 0;
+}
+
+.nova form .field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.nova form .field.shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+  20%,
+  80% {
+    margin-left: -12px;
+  }
+  40%,
+  60% {
+    margin-left: 12px;
+  }
+}
+
+.nova form .field .input-area {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.nova form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #bf40bf;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+
+.nova form .field input:focus,
+.nova form .field.valid input {
+  border-color: #bf40bf;
+}
+
+.nova form .field.shake input,
+.nova form .field.error input {
+  border-color: #dc3545;
+}
+
+.nova .field .input-area i {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.nova .input-area .icon {
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+
+.nova .input-area .error-icon {
+  right: 15px;
+  color: #dc3545;
+}
+
+.nova form input:focus ~ .icon,
+.nova form .field.valid .icon {
+  color: #bf40bf;
+}
+
+.nova form .field.shake input:focus ~ .icon,
+.nova form .field.error input:focus ~ .icon {
+  color: #bfbfbf;
+}
+
+.nova form input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+}
+
+.nova form .field .error-txt {
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.nova form .field .error {
+  display: none;
+}
+
+.nova form .field.shake .error,
+.nova form .field.error .error {
+  display: block;
+}
+
+.nova form .pass-txt {
+  text-align: left;
+  margin-top: -10px;
+}
+
+.nova .wrapper a.button-a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nova .wrapper a.button-a:hover {
+  text-decoration: none;
+}
+
+.nova .wrapper a {
+  color: #bf40bf;
+  text-decoration: none;
+}
+
+.nova .wrapper a:hover {
+  text-decoration: underline;
+}
+
+.nova form button[type="submit"] {
+  height: 45px;
+  width: 300px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  background: #cf9fff;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nova form button[type="submit"]:hover {
+  background: #bf40bf;
+}
